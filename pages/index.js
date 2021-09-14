@@ -21,9 +21,10 @@ export default function Home() {
                   />
                 </div>
                 <div className="col">
-                  <h1 className="display-1">
+                  <h1 className="display-2">
                     Hello,
                     <br /> I am Aaryamann
+                    <hr />
                   </h1>
                   <p>
                     I am a B.Tech Computer Science grad with specialization in

@@ -71,6 +71,7 @@ const Project = (props) => {
           </div>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
