@@ -21,9 +21,7 @@ function MyApp({ Component, pageProps }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <Navbar />
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 }

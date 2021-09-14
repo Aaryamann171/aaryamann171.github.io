@@ -19,7 +19,7 @@ const Navbar = () => {
           </a>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/skills">
+              <a className="nav-link" aria-current="page" href="/skills">
                 Skills
               </a>
             </li>
@@ -30,12 +30,20 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link disabled"
-                href="#"
-                tabIndex="-1"
-                aria-disabled="true"
+                className="nav-link"
+                href="https://github.com/aaryamann171"
+                target="_blank"
               >
-                Disabled
+                GitHub
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="https://aaryamann171.github.io/blog/"
+                target="_blank"
+              >
+                Blog
               </a>
             </li>
           </ul>
