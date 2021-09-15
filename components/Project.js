@@ -4,58 +4,7 @@ const controllerStyle = {
 };
 const url = "https://github.com/Aaryamann171/dbug-django";
 const Project = (props) => {
-  const dataTarget = `#${props.projectID}`;
-  let image2, image3, nextBtn, prevBtn, sourceCodeBtn, deploymentBtn;
-  if (props.imgSrc2) {
-    image2 = (
-      <div className="carousel-item">
-        <img
-          src={props.imgSrc2}
-          className="d-block w-100 carouselImg"
-          alt={props.imgAlt2}
-        />
-      </div>
-    );
-    image3 = (
-      <div className="carousel-item">
-        <img
-          src={props.imgSrc3}
-          className="d-block w-100 carouselImg"
-          alt={props.imgAlt3}
-        />
-      </div>
-    );
-    nextBtn = (
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target={dataTarget}
-        data-bs-slide="next"
-      >
-        <span
-          style={controllerStyle}
-          className="carousel-control-next-icon"
-          aria-hidden="true"
-        ></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    );
-    prevBtn = (
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev"
-      >
-        <span
-          style={controllerStyle}
-          className="carousel-control-prev-icon"
-          aria-hidden="true"
-        ></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-    );
-  }
+  let sourceCodeBtn, deploymentBtn;
   if (props.sourceCodeURL) {
     sourceCodeBtn = (
       <button className="btn btn-primary">
@@ -98,11 +47,7 @@ const Project = (props) => {
                   alt={props.imgAlt1}
                 />
               </div>
-              {image2}
-              {image3}
             </div>
-            {prevBtn}
-            {nextBtn}
           </div>
         </div>
       </div>
