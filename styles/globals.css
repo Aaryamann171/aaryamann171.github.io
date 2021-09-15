@@ -23,3 +23,7 @@ a:hover {
   border: 2px black solid;
   border-radius: 8px;
 }
+
+.deploymentBtn {
+  background-color: lightgray;
+}

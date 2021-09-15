@@ -16,7 +16,7 @@ const Project = (props) => {
   }
   if (props.deploymentURL) {
     deploymentBtn = (
-      <button className="btn btn-light mx-4">
+      <button className="btn btn-light mx-4 deploymentBtn">
         <Link href={props.deploymentURL}>
           <a target="_blank">Check it out</a>
         </Link>
