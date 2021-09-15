@@ -1,6 +1,11 @@
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+
+const descBoxStyle = {
+  padding: "20px",
+  border: "1px black solid",
+  borderRadius: "8px",
+};
 
 export default function Home() {
   return (
@@ -8,7 +13,7 @@ export default function Home() {
       <div className="d-flex flex-column min-vh-100">
         <Navbar />
         <div className="my-auto container">
-          <div className={styles.descBox}>
+          <div style={descBoxStyle}>
             <div>
               <div className="row">
                 <div className="col-md-6 col-sm-12">

@@ -7,6 +7,7 @@ const skillsCardStyle = {
   borderRadius: "8px",
   padding: "20px",
 };
+
 const Skills = () => {
   return (
     <>

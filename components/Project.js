@@ -1,15 +1,24 @@
 import Link from "next/link";
-const controllerStyle = {
-  backgroundColor: "black",
+
+const anchorStyle = {
+  color: "black",
+  textDecoration: "none",
 };
-const url = "https://github.com/Aaryamann171/dbug-django";
+
+const carouselImgStyle = {
+  border: "2px black solid",
+  borderRadius: "8px",
+};
+
 const Project = (props) => {
   let sourceCodeBtn, deploymentBtn;
   if (props.sourceCodeURL) {
     sourceCodeBtn = (
       <button className="btn btn-primary">
         <Link href={props.sourceCodeURL}>
-          <a target="_blank">Source Code</a>
+          <a target="_blank" style={anchorStyle}>
+            Source Code
+          </a>
         </Link>
       </button>
     );
@@ -18,7 +27,9 @@ const Project = (props) => {
     deploymentBtn = (
       <button className="btn btn-light mx-4 deploymentBtn">
         <Link href={props.deploymentURL}>
-          <a target="_blank">Check it out</a>
+          <a target="_blank" style={anchorStyle}>
+            Check it out
+          </a>
         </Link>
       </button>
     );
@@ -43,7 +54,8 @@ const Project = (props) => {
               <div className="carousel-item active">
                 <img
                   src={props.imgSrc1}
-                  className="d-block w-100 carouselImg"
+                  className="d-block w-100"
+                  style={carouselImgStyle}
                   alt={props.imgAlt1}
                 />
               </div>

@@ -6,24 +6,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: black;
-}
-
 * {
   box-sizing: border-box;
-}
-
-.carouselImg {
-  border: 2px black solid;
-  border-radius: 8px;
-}
-
-.deploymentBtn {
-  background-color: lightgray;
 }
