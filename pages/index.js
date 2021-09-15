@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
@@ -13,7 +12,7 @@ export default function Home() {
             <div>
               <div className="row">
                 <div className="col-md-6 col-sm-12">
-                  <Image
+                  <img
                     src="/images/others/aaryamann_vector.png"
                     alt="aaryamann"
                     height={450}

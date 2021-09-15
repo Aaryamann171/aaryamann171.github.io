@@ -1,5 +1,4 @@
 import Skill from "../components/Skill";
-import Image from "next/image";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -16,7 +15,7 @@ const Skills = () => {
         <div className="container my-auto">
           <div className="row container">
             <div className="col-md-6 col-sm-12">
-              <Image
+              <img
                 src="/images/others/coder_vector.png"
                 alt="coder"
                 width={500}

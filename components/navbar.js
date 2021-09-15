@@ -1,3 +1,4 @@
+import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,44 +15,42 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a className="navbar-brand" href="/">
-            Aaryamann
-          </a>
+          <Link href="/">
+            <a className="navbar-brand">Aaryamann</a>
+          </Link>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/skills">
-                Skills
-              </a>
+              <Link href="/skills">
+                <a className="nav-link" aria-current="page">
+                  Skills
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
-                Projects
-              </a>
+              <Link href="/projects">
+                <a className="nav-link">Projects</a>
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://github.com/aaryamann171"
-                target="_blank"
-              >
-                GitHub
-              </a>
+              <Link href="https://github.com/aaryamann171">
+                <a className="nav-link" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="https://aaryamann171.github.io/blog/"
-                target="_blank"
-              >
-                Blog
-              </a>
+              <Link href="https://aaryamann171.github.io/blog/">
+                <a className="nav-link" target="_blank" rel="noreferrer">
+                  Blog
+                </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" href="mailto:aaryamann171@gmail.com">
-                E-mail
-              </a>
+              <Link href="mailto:aaryamann171@gmail.com">
+                <a className="nav-link">E-mail</a>
+              </Link>
             </li>
           </ul>
         </div>
