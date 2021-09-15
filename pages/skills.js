@@ -14,16 +14,16 @@ const Skills = () => {
       <div className="d-flex flex-column min-vh-100">
         <Navbar />
         <div className="container my-auto">
-          <div className="row">
-            <div className="col">
+          <div className="row container">
+            <div className="col-md-6 col-sm-12">
               <Image
                 src="/images/others/coder_vector.png"
                 alt="coder"
-                width="500"
-                height="500"
+                width={500}
+                height={500}
               />
             </div>
-            <div className="col" style={skillsCardStyle}>
+            <div className="col-md-6 col-sm-12" style={skillsCardStyle}>
               <h4>Programming</h4>
               <Skill
                 thumbnailSrc="https://img.icons8.com/color/144/000000/python.png"
@@ -54,11 +54,27 @@ const Skills = () => {
                 thumbnailSrc="https://img.icons8.com/color/144/000000/bootstrap.png"
                 title="bootstrap"
               />
-              <h4>SQL</h4>
+              <h4>Database</h4>
+              <Skill
+                thumbnailSrc="https://img.icons8.com/ios/50/000000/mysql-logo.png"
+                title="my-sql"
+              />
+              <Skill
+                thumbnailSrc="https://img.icons8.com/color/48/000000/mongodb.png"
+                title="mongodb"
+              />
+              <Skill
+                thumbnailSrc="https://img.icons8.com/color/48/000000/postgreesql.png"
+                title="postgresql"
+              />
               <h4>Frameworks</h4>
               <Skill
                 thumbnailSrc="https://img.icons8.com/color/144/000000/django.png"
                 title="django"
+              />
+              <Skill
+                thumbnailSrc="https://img.icons8.com/plasticine/100/000000/react.png"
+                title="react"
               />
               <Skill
                 thumbnailSrc="https://img.icons8.com/color/144/000000/angularjs.png"
@@ -78,7 +94,7 @@ const Skills = () => {
                 title="git"
               />
               <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/github.png"
+                thumbnailSrc="https://img.icons8.com/ios-filled/50/000000/github.png"
                 title="github"
               />
               <Skill

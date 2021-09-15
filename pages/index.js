@@ -12,15 +12,15 @@ export default function Home() {
           <div className={styles.descBox}>
             <div>
               <div className="row">
-                <div className="col">
+                <div className="col-md-6 col-sm-12">
                   <Image
                     src="/images/others/aaryamann_vector.png"
                     alt="aaryamann"
-                    width="400"
-                    height="400"
+                    height={450}
+                    width={450}
                   />
                 </div>
-                <div className="col">
+                <div className="col-md-6 col-sm-12">
                   <h1 className="display-2">
                     Hello,
                     <br /> I am Aaryamann

@@ -77,13 +77,13 @@ const Project = (props) => {
   return (
     <div className="container my-auto">
       <div className="row my-4">
-        <div className="col-4">
+        <div className="col-md-4 col-sm-12 my-3">
           <h1 className="display-2">{props.projectName}</h1>
           <p className="lead">{props.projectDesc}</p>
           {sourceCodeBtn}
           {deploymentBtn}
         </div>
-        <div className="col-8">
+        <div className="col-md-8 col-sm-12">
           <div
             id={props.projectID}
             className="carousel slide"
