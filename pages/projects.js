@@ -31,9 +31,9 @@ const Projects = () => {
         />
         <Project
           projectName="uniFy"
-          projectID="unify"
+          projectID="uniFy"
           projectDesc="University utility app developed using Flutter a Dart Framework."
-          imgSrc1="/images/unify/unify.png"
+          imgSrc1="/images/uniFy/unify.png"
           imgAlt1="unify"
         />
         <Project
