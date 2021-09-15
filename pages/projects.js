@@ -17,28 +17,24 @@ const Projects = () => {
           imgAlt2="dubg2"
           imgSrc3="/images/dbug/dbug3.png"
           imgAlt3="dubg3"
+          sourceCodeURL="https://github.com/Aaryamann171/dbug-django"
+          deploymentURL="http://d-bug.herokuapp.com/"
         />
         <Project
           projectName="Fang Stonks"
           projectID="fangStonks"
           projectDesc="A stock price visualization tools built using Streamlit a python Framework."
-          imgSrc1="/images/dbug/dbug1.png"
-          imgAlt1="dubg1"
-          imgSrc2="/images/dbug/dbug2.png"
-          imgAlt2="dubg2"
-          imgSrc3="/images/dbug/dbug3.png"
-          imgAlt3="dubg3"
+          imgSrc1="/images/fang-stonks/fs-1.png"
+          imgAlt1="fs-1"
+          sourceCodeURL="https://github.com/Aaryamann171/fang-stonks"
+          deploymentURL="https://share.streamlit.io/aaryamann171/fang-stonks/main/streamlit_app.py"
         />
         <Project
           projectName="uniFy"
           projectID="unify"
           projectDesc="University utility app developed using Flutter a Dart Framework."
-          imgSrc1="/images/dbug/dbug1.png"
-          imgAlt1="dubg1"
-          imgSrc2="/images/dbug/dbug2.png"
-          imgAlt2="dubg2"
-          imgSrc3="/images/dbug/dbug3.png"
-          imgAlt3="dubg3"
+          imgSrc1="/images/unify/unify.png"
+          imgAlt1="unify"
         />
         <Project
           projectName="Synthwave - Vroom! Vroom!"
@@ -50,6 +46,7 @@ const Projects = () => {
           imgAlt2="svv2"
           imgSrc3="/images/svv/svv3.png"
           imgAlt3="svv3"
+          sourceCodeURL="https://github.com/Aaryamann171/Synthwave-Vroom-Vroom"
         />
       </div>
       <Footer />

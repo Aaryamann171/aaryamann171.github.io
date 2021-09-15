@@ -26,11 +26,13 @@ export default function Home() {
                     <br /> I am Aaryamann
                     <hr />
                   </h1>
-                  <p>
-                    I am a B.Tech Computer Science grad with specialization in
-                    Artificial Intelligence. Currently working as a Full Stack
-                    Developer. I like to play around with various technologies
-                    and collabrate with like minded people.
+                  <p className="lead">
+                    B.Tech in <strong>Computer Science</strong> with
+                    specialization in <strong>A</strong>rtificial{" "}
+                    <strong>I</strong>ntelligence. <br />
+                    Currently working as a <strong>Full Stack Developer</strong>
+                    . <br />I like to play around with various technologies and
+                    collaborate with like minded people.
                   </p>
                 </div>
               </div>

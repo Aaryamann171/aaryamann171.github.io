@@ -11,6 +11,15 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.carouselImg {
+  border: 2px black solid;
+  border-radius: 8px;
 }

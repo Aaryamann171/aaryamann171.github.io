@@ -28,6 +28,8 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
+          </ul>
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -44,6 +46,11 @@ const Navbar = () => {
                 target="_blank"
               >
                 Blog
+              </a>
+            </li>
+            <li>
+              <a className="nav-link" href="mailto:aaryamann171@gmail.com">
+                E-mail
               </a>
             </li>
           </ul>
