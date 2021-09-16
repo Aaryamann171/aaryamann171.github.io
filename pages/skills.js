@@ -8,6 +8,12 @@ const skillsCardStyle = {
   padding: "20px",
 };
 
+const imgStyle = {
+  borderRadius: "8px",
+  alignItems: "center",
+  maxWidth: "90%",
+};
+
 const Skills = () => {
   return (
     <>
@@ -19,8 +25,7 @@ const Skills = () => {
               <img
                 src="/images/others/coder_vector.png"
                 alt="coder"
-                width={500}
-                height={500}
+                style={imgStyle}
               />
             </div>
             <div className="col-md-6 col-sm-12" style={skillsCardStyle}>

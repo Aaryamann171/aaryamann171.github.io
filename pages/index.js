@@ -1,6 +1,12 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
+const imgStyle = {
+  borderRadius: "8px",
+  alignItems: "center",
+  maxWidth: "80%",
+};
+
 const descBoxStyle = {
   padding: "20px",
   border: "1px black solid",
@@ -20,8 +26,7 @@ export default function Home() {
                   <img
                     src="/images/others/aaryamann_vector.png"
                     alt="aaryamann"
-                    height={450}
-                    width={450}
+                    style={imgStyle}
                   />
                 </div>
                 <div className="col-md-6 col-sm-12">

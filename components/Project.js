@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-const anchorStyle = {
+const anchorStyleSourceCode = {
+  color: "white",
+  textDecoration: "none",
+};
+
+const anchorStyleDeployment = {
   color: "black",
   textDecoration: "none",
 };
@@ -16,7 +21,7 @@ const Project = (props) => {
     sourceCodeBtn = (
       <button className="btn btn-primary">
         <Link href={props.sourceCodeURL}>
-          <a target="_blank" style={anchorStyle}>
+          <a target="_blank" style={anchorStyleSourceCode}>
             Source Code
           </a>
         </Link>
@@ -27,7 +32,7 @@ const Project = (props) => {
     deploymentBtn = (
       <button className="btn btn-light mx-4 deploymentBtn">
         <Link href={props.deploymentURL}>
-          <a target="_blank" style={anchorStyle}>
+          <a target="_blank" style={anchorStyleDeployment}>
             Check it out
           </a>
         </Link>
