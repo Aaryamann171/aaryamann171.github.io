@@ -10,7 +10,7 @@ const anchorStyleDeployment = {
   textDecoration: "none",
 };
 
-const carouselImgStyle = {
+const projectImgStyle = {
   border: "2px black solid",
   borderRadius: "8px",
 };
@@ -49,23 +49,12 @@ const Project = (props) => {
           {deploymentBtn}
         </div>
         <div className="col-md-8 col-sm-12">
-          <div
-            id={props.projectID}
-            className="carousel slide"
-            data-bs-touch="false"
-            data-bs-interval="false"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src={props.imgSrc1}
-                  className="d-block w-100"
-                  style={carouselImgStyle}
-                  alt={props.imgAlt1}
-                />
-              </div>
-            </div>
-          </div>
+          <img
+            src={props.imgSrc}
+            className="d-block w-100"
+            style={projectImgStyle}
+            alt={props.imgAlt}
+          />
         </div>
       </div>
       <hr />

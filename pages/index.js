@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 const imgStyle = {
   borderRadius: "8px",
   alignItems: "center",
-  maxWidth: "80%",
+  maxWidth: "100%",
 };
 
 const descBoxStyle = {
@@ -22,14 +22,14 @@ export default function Home() {
           <div style={descBoxStyle}>
             <div>
               <div className="row">
-                <div className="col-md-6 col-sm-12">
+                <div className="col-md-4 col-sm-12">
                   <img
                     src="/images/others/aaryamann_vector.png"
                     alt="aaryamann"
                     style={imgStyle}
                   />
                 </div>
-                <div className="col-md-6 col-sm-12">
+                <div className="col-md-8 col-sm-12">
                   <h1 className="display-2">
                     Hello,
                     <br /> I am Aaryamann
