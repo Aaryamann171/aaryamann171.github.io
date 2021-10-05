@@ -54,6 +54,7 @@ const Project = (props) => {
             className="d-block w-100"
             style={projectImgStyle}
             alt={props.imgAlt}
+            loading="lazy"
           />
         </div>
       </div>
