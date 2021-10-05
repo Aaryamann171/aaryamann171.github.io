@@ -3,7 +3,14 @@ const imgStyles = {
   padding: "5px",
 };
 const Skill = (props) => {
-  return <img style={imgStyles} src={props.thumbnailSrc} title={props.title} />;
+  return (
+    <img
+      style={imgStyles}
+      src={props.thumbnailSrc}
+      title={props.title}
+      loading="lazy"
+    />
+  );
 };
 
 export default Skill;
