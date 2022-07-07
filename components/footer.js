@@ -1,7 +1,10 @@
+const footerStyle = {
+  color: "#57AB5A",
+}
 const Footer = () => {
   return (
-    <footer className="bg-light text-center text-lg-start footer navbar-fixed-bottom">
-      <div className="text-center p-3">&lt;/&gt; with &lt;3 by aaryamann</div>
+    <footer className="text-center text-lg-start footer navbar-fixed-bottom" style={footerStyle}>
+      <div className="text-center p-3">[&lt;/&gt; with &lt;3 by aaryamann]</div>
     </footer>
   );
 };

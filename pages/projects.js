@@ -2,9 +2,14 @@ import Project from "../components/Project";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
+const backgroudStyle = {
+  backgroundColor: "#0d1117",
+  color: "#909DAB",
+}
+
 const Projects = () => {
   return (
-    <div>
+    <div style={backgroudStyle}>
       <Navbar />
       <div className="container my-5">
         <Project

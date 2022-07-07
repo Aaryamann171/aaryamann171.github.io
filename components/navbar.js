@@ -1,7 +1,11 @@
 import Link from "next/link";
+const linkStyle = {
+  color: "#57AB5A",
+}
+
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -16,40 +20,40 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <Link href="/">
-            <a className="navbar-brand">Aaryamann</a>
+            <a className="navbar-brand" style={linkStyle}>[Aaryamann]</a>
           </Link>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link href="/skills">
-                <a className="nav-link" aria-current="page">
-                  Skills
+                <a className="nav-link" aria-current="page" style={linkStyle}>
+                  [Skills]
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/projects">
-                <a className="nav-link">Projects</a>
+                <a className="nav-link" style={linkStyle}>[Projects]</a>
               </Link>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link href="https://github.com/aaryamann171">
-                <a className="nav-link" target="_blank" rel="noreferrer">
-                  GitHub
+                <a className="nav-link" target="_blank" rel="noreferrer" style={linkStyle}>
+                  [GitHub]
                 </a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="https://aaryamann171.github.io/blog/">
-                <a className="nav-link" target="_blank" rel="noreferrer">
-                  Blog
+                <a className="nav-link" target="_blank" rel="noreferrer" style={linkStyle}>
+                  [Blog]
                 </a>
               </Link>
             </li>
             <li>
               <Link href="mailto:aaryamann171@gmail.com">
-                <a className="nav-link">E-mail</a>
+                <a className="nav-link" style={linkStyle}>[E-mail]</a>
               </Link>
             </li>
           </ul>

@@ -1,6 +1,10 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
+const foobar = {
+  backgroundColor: "#0d1117",
+};
+
 const imgStyle = {
   borderRadius: "8px",
   alignItems: "center",
@@ -8,6 +12,8 @@ const imgStyle = {
 };
 
 const descBoxStyle = {
+  backgroundColor: "#161B22",
+  color: "#909DAB",
   padding: "20px",
   border: "1px black solid",
   borderRadius: "8px",
@@ -16,7 +22,7 @@ const descBoxStyle = {
 export default function Home() {
   return (
     <div>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="d-flex flex-column min-vh-100" style={foobar}>
         <Navbar />
         <div className="my-auto container">
           <div style={descBoxStyle}>
@@ -47,7 +53,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div >
         <Footer />
       </div>
     </div>

@@ -3,10 +3,16 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
 const skillsCardStyle = {
+  backgroundColor: "#161B22",
+  color: "#909DAB",
   border: "1px solid black",
   borderRadius: "8px",
   padding: "20px",
 };
+
+const backgroudStyle = {
+  backgroundColor: "#0d1117",
+}
 
 const imgStyle = {
   borderRadius: "8px",
@@ -17,7 +23,7 @@ const imgStyle = {
 const Skills = () => {
   return (
     <>
-      <div className="d-flex flex-column min-vh-100">
+      <div className="d-flex flex-column min-vh-100" style={backgroudStyle}>
         <Navbar />
         <div className="container my-auto">
           <div className="row container">
