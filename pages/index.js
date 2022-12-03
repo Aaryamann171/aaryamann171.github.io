@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Image from "next/image";
 
 const foobar = {
   backgroundColor: "#0d1117",
@@ -29,10 +30,12 @@ export default function Home() {
             <div>
               <div className="row">
                 <div className="col-md-4 col-sm-12">
-                  <img
+                  <Image
                     src="/images/others/aaryamann_vector.png"
                     alt="aaryamann"
                     style={imgStyle}
+                    height={400}
+                    width={400}
                   />
                 </div>
                 <div className="col-md-8 col-sm-12">
@@ -42,12 +45,12 @@ export default function Home() {
                     <hr />
                   </h1>
                   <p className="lead">
-                    B.Tech in <strong>Computer Science</strong> with
+                    I like to play around with various technologies and
+                    collaborate with like minded people. <br />
+                    I am currently working as a <strong>Full Stack Developer</strong>.
+                    I have a B.Tech in <strong>Computer Science</strong> with
                     specialization in <strong>A</strong>rtificial{" "}
                     <strong>I</strong>ntelligence. <br />
-                    Currently working as a <strong>Full Stack Developer</strong>
-                    . <br />I like to play around with various technologies and
-                    collaborate with like minded people.
                   </p>
                 </div>
               </div>
