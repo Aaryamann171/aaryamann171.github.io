@@ -21,6 +21,109 @@ const imgStyle = {
 };
 
 const Skills = () => {
+  const skillData = [
+    {
+      category: "Programming",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/python.png",
+          title: "python"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/cpp.png",
+          title: "c++"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/java.png",
+          title: "java"
+        },
+      ]
+    },
+    {
+      category: "Web Development",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/html5.png",
+          title: "html5"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/css3.png",
+          title: "css3"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/javascript.png",
+          title: "javascript"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/tailwindcss.png",
+          title: "tailwind"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/bootstrap.png",
+          title: "bootstrap",
+        }
+      ]
+    },
+    {
+      category: "Database",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/mysql.png",
+          title: "my-sql"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/mongodb.png",
+          title: "mongodb"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/postgresql.png",
+          title: "postgresql"
+        },
+      ]
+    },
+    {
+      category: "Frameworks",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/nextjs.png",
+          title: "next.js"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/django.png",
+          title: "django"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/react.png",
+          title: "react"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/flutter.png",
+          title: "flutter"
+        }
+      ]
+    },
+    {
+      category: "Platforms and Tools",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/linux.png",
+          title: "linux"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/git.png",
+          title: "git"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/github.png",
+          title: "github"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/adobe-xd.png",
+          title: "adobe-xd"
+        }
+      ]
+    }
+  ]
   return (
     <>
       <div className="d-flex flex-column min-vh-100" style={backgroudStyle}>
@@ -35,83 +138,26 @@ const Skills = () => {
               />
             </div>
             <div className="col-md-6 col-sm-12" style={skillsCardStyle}>
-              <h4>Programming</h4>
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/python.png"
-                title="python"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-                title="c++"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png"
-                title="java"
-              />
-              <h4>Web Development</h4>
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/html-5.png"
-                title="html5"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/css3.png"
-                title="css3"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/javascript.png"
-                title="javascript"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/bootstrap.png"
-                title="bootstrap"
-              />
-              <h4>Database</h4>
-              <Skill
-                thumbnailSrc="https://img.icons8.com/ios/50/000000/mysql-logo.png"
-                title="my-sql"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/48/000000/mongodb.png"
-                title="mongodb"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/48/000000/postgreesql.png"
-                title="postgresql"
-              />
-              <h4>Frameworks</h4>
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/django.png"
-                title="django"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/plasticine/100/000000/react.png"
-                title="react"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/angularjs.png"
-                title="angularjs"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/flutter.png"
-                title="flutter"
-              />
-              <h4>Platforms and Tools</h4>
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/linux.png"
-                title="linux"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/git.png"
-                title="git"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/ios-filled/50/000000/github.png"
-                title="github"
-              />
-              <Skill
-                thumbnailSrc="https://img.icons8.com/color/144/000000/adobe-xd.png"
-                title="adobe-xd"
-              />
+              {
+              skillData.map((data) => {
+                return(
+                  <div key={data.category}>
+                  <h4>{data.category}</h4>
+                  {
+                    data.skills.map((skill) => {
+                      return(
+                      <Skill
+                        key={skill.title}
+                        thumbnailSrc={skill.thumbnailSrc}
+                        title={skill.title}
+                      />
+                      )
+                    })
+                  }
+                  </div>
+                )
+              })
+              }
             </div>
           </div>
         </div>

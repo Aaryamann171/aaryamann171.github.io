@@ -1,6 +1,6 @@
 import Link from "next/link";
 const linkStyle = {
-  color: "#57AB5A",
+  color: "#a2d2fb",
 }
 
 const Navbar = () => {
