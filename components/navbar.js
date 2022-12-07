@@ -1,11 +1,18 @@
 import Link from "next/link";
+
 const linkStyle = {
-  color: "#a2d2fb",
+  color: "#000000",
+  fontWeight: "bold"
+}
+const navStyle = {
+  background: "#FFFFFF",
+  borderBottom: "2px black solid",
+  color: "#000000"
 }
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg navbar-light mb-2" style={navStyle}>
       <div className="container-fluid">
         <button
           className="navbar-toggler"

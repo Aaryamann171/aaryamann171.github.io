@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Image from "next/image";
 
 const foobar = {
-  backgroundColor: "#0d1117",
+  backgroundColor: "#F6F6F6",
 };
 
 const imgStyle = {
@@ -13,10 +13,13 @@ const imgStyle = {
 };
 
 const descBoxStyle = {
-  backgroundColor: "#161B22",
-  color: "#909DAB",
+  backgroundColor: "#FFFFFF",
+  color: "#000000",
   padding: "20px",
-  border: "1px black solid",
+  borderLeft: "2px black solid",
+  borderTop: "2px black solid",
+  borderBottom: "4px black solid",
+  borderRight: "4px black solid",
   borderRadius: "8px",
 };
 
@@ -26,7 +29,7 @@ export default function Home() {
       <div className="d-flex flex-column min-vh-100" style={foobar}>
         <Navbar />
         <div className="my-auto container">
-          <div style={descBoxStyle}>
+          <div id="brutal-btn" style={descBoxStyle}>
             <div>
               <div className="row">
                 <div className="col-md-4 col-sm-12">
@@ -41,7 +44,7 @@ export default function Home() {
                 <div className="col-md-8 col-sm-12">
                   <h1 className="display-2">
                     Hello,
-                    <br /> I am Aaryamann
+                    <br /> I am <strong>Aaryamann</strong>
                     <hr />
                   </h1>
                   <p className="lead">

@@ -3,10 +3,20 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
 const backgroudStyle = {
-  backgroundColor: "#0d1117",
-  color: "#909DAB",
+  backgroundColor: "#F6F6F6",
+  color: "#000000",
 }
 
+const foobar = {
+  backgroundColor: "#FFFFFF",
+  borderLeft: "2px black solid",
+  borderTop: "2px black solid",
+  borderBottom: "4px black solid",
+  borderRight: "4px black solid",
+  borderRadius: "8px",
+  padding: "20px",
+  marginBottom: "20px"
+}
 
 const Projects = () => {
   const projects = [
@@ -47,7 +57,7 @@ const Projects = () => {
         {
         projects.map((project) => {
           return (
-            <div key={project.projectName}>
+            <div key={project.projectName} style={foobar}>
             <Project
               projectName={project.projectName}
               projectDesc={project.projectDesc}
