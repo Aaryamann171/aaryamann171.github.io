@@ -59,12 +59,13 @@ const Project = (props) => {
       </button>
     );
   }
+
   return (
     <div className="container my-auto">
       <div className="row my-4">
         <div className="col-md-4 col-sm-12 my-3">
-          <h1 className="display-2 font-weight-bold">{props.projectName}</h1>
-          <p className="lead">{props.projectDesc}</p>
+          <h1 className="display-3 font-weight-bold">{props.projectName}</h1>
+          <p className="lead my-4">{props.projectDesc}</p>
             {sourceCodeBtn}
             {deploymentBtn}
         </div>
@@ -81,4 +82,5 @@ const Project = (props) => {
     </div>
   );
 };
+
 export default Project;

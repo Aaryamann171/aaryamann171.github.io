@@ -7,7 +7,7 @@ const backgroudStyle = {
   color: "#000000",
 }
 
-const foobar = {
+const projectsStyle = {
   backgroundColor: "#FFFFFF",
   borderLeft: "2px black solid",
   borderTop: "2px black solid",
@@ -22,15 +22,23 @@ const Projects = () => {
   const projects = [
     {
       projectName: "dbug",
-      projectDesc: "An online code review tool developed using django.",
+      projectDesc: "An online code review tool developed using Django.",
       imgSrc: "/images/dbug/dbug1.png",
       imgAlt: "dubg1",
       sourceCodeURL: "https://github.com/Aaryamann171/dbug-django",
       deploymentURL:  "http://d-bug.herokuapp.com/"
     },
     {
+      projectName: "LaunchPadX",
+      projectDesc: "A SpaceX dashboard developed using Next.js and TailwindCSS.",
+      imgSrc: "/images/launchpadx/lpx-1.png",
+      imgAlt: "lpx",
+      sourceCodeURL: "https://github.com/Aaryamann171/LaunchPadX",
+      deploymentURL: "https://launch-pad-x.vercel.app"
+    },
+    {
       projectName: "Fang Stonks",
-      projectDesc: "A stock price visualization tools built using Streamlit a python Framework.",
+      projectDesc: "A stock price visualization tools built using Streamlit.",
       imgSrc: "/images/fang-stonks/fs-1.png",
       imgAlt: "fs-1",
       sourceCodeURL: "https://github.com/Aaryamann171/fang-stonks",
@@ -38,18 +46,19 @@ const Projects = () => {
     },
     {
         projectName: "uniFy",
-        projectDesc: "University utility app developed using Flutter a Dart Framework.",
+        projectDesc: "University utility app developed using Flutter.",
         imgSrc: "/images/uniFy/unify.png",
         imgAlt: "unify"
-      },
-      {
-        projectName: "Synthwave - Vroom! Vroom!",
-        projectDesc: "A driving game developed using PyGame a Python library.",
-        imgSrc: "/images/svv/svv1.png",
-        imgAlt: "svv1",
-        sourceCodeURL: "https://github.com/Aaryamann171/Synthwave-Vroom-Vroom"
-      }
+    },
+    {
+      projectName: "Synthwave - Vroom! Vroom!",
+      projectDesc: "A driving game developed using PyGame.",
+      imgSrc: "/images/svv/svv3.png",
+      imgAlt: "svv1",
+      sourceCodeURL: "https://github.com/Aaryamann171/Synthwave-Vroom-Vroom"
+    }
   ]
+
   return (
     <div style={backgroudStyle}>
       <Navbar />
@@ -57,7 +66,7 @@ const Projects = () => {
         {
         projects.map((project) => {
           return (
-            <div key={project.projectName} style={foobar}>
+            <div key={project.projectName} style={projectsStyle}>
             <Project
               projectName={project.projectName}
               projectDesc={project.projectDesc}
@@ -75,4 +84,5 @@ const Projects = () => {
     </div>
   );
 };
+
 export default Projects;
