@@ -2,10 +2,6 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Image from "next/image";
 
-const foobar = {
-  backgroundColor: "#F6F6F6",
-};
-
 const imgStyle = {
   borderRadius: "8px",
   alignItems: "center",
@@ -26,7 +22,7 @@ const descBoxStyle = {
 export default function Home() {
   return (
     <div>
-      <div className="d-flex flex-column min-vh-100" style={foobar}>
+      <div className="d-flex flex-column min-vh-100" style={{backgroundColor: "#F6F6F6"}}>
         <Navbar />
         <div className="my-auto container">
           <div id="brutal-btn" style={descBoxStyle}>
@@ -48,12 +44,9 @@ export default function Home() {
                     <hr />
                   </h1>
                   <p className="lead">
-                    I like to play around with various technologies and
-                    collaborate with like minded people. <br />
-                    I am currently working as a <strong>Full Stack Developer</strong>.
-                    I have a B.Tech in <strong>Computer Science</strong> with
-                    specialization in <strong>A</strong>rtificial{" "}
-                    <strong>I</strong>ntelligence. <br />
+                   I am a Full Stack Developer with 2 years of experience, I have a passion for exploring diverse technologies and working alongside individuals who share a similar mindset. 
+                   My academic background includes a B.Tech in Computer Science with a specialization in Artificial Intelligence. 
+                   I am enthusiastic about collaborating on new projects and contributing my skills to create innovative solutions.
                   </p>
                 </div>
               </div>
