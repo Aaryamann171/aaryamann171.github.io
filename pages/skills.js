@@ -32,7 +32,7 @@ const Skills = () => {
                 return (
                   <div key={index}>
                     <h1 className="text-2xl mb-2 text-center px-4 md:px-36">{data.category}</h1>
-                    <div className="flex justify-center space-x-4">
+                    <div className="flex justify-center space-x-2">
                       {
                         data.skills.map((skill, index) => {
                           return (
