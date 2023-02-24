@@ -1,4 +1,4 @@
-import Project from "../components/Project";
+import ProjectCard from "../components/project-card";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -15,7 +15,7 @@ const Projects = () => {
         projectsData.map((project) => {
           return (
             <div key={project.projectName}>
-              <Project
+              <ProjectCard
                 projectName={project.projectName}
                 projectDesc={project.projectDesc}
                 imgSrc={project.imgSrc}

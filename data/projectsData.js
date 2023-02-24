@@ -1,19 +1,19 @@
   export const projectsData = [
     {
-      projectName: "dbug",
-      projectDesc: "An online code review tool developed using Django.",
-      imgSrc: "/images/dbug/dbug1.png",
-      imgAlt: "dubg1",
-      sourceCodeURL: "https://github.com/Aaryamann171/dbug-django",
-      deploymentURL:  "http://d-bug.herokuapp.com/"
-    },
-    {
       projectName: "LaunchPadX",
       projectDesc: "A SpaceX dashboard developed using Next.js and TailwindCSS.",
       imgSrc: "/images/launchpadx/lpx-1.png",
       imgAlt: "lpx",
       sourceCodeURL: "https://github.com/Aaryamann171/LaunchPadX",
       deploymentURL: "https://launch-pad-x.vercel.app"
+    },
+    {
+      projectName: "dbug",
+      projectDesc: "An online code review tool developed using Django.",
+      imgSrc: "/images/dbug/dbug1.png",
+      imgAlt: "dubg1",
+      sourceCodeURL: "https://github.com/Aaryamann171/dbug-django",
+      deploymentURL:  "http://d-bug.herokuapp.com/"
     },
     {
       projectName: "Fang Stonks",

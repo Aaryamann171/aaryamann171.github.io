@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Skill = ({ thumbnailSrc, title }) => {
+const SkillIcon = ({ thumbnailSrc, title }) => {
   return (
     <Image
     alt={title}
@@ -13,4 +13,4 @@ const Skill = ({ thumbnailSrc, title }) => {
   );
 };
 
-export default Skill;
+export default SkillIcon;

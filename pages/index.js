@@ -2,6 +2,10 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Image from "next/image";
 
+import {ImStack} from "react-icons/im";
+import {MdOutlineSchool} from "react-icons/md";
+import {GiTechnoHeart} from "react-icons/gi";
+
 const Home = () => {
   return (
     <div className="md:h-screen md:w-screen flex flex-col justify-between items-center overflow-x-hidden">
@@ -11,8 +15,8 @@ const Home = () => {
           <Image
             src="/images/others/aaryamann_vector.png"
             alt="aaryamann"
-            height={1400}
-            width={1400}
+            height={600}
+            width={600}
           />
         </div>
         <div className="md:hidden">
@@ -28,10 +32,23 @@ const Home = () => {
             Hello,<br /> I am <span className="font-bold">Aaryamann</span>
           </h1>
           <div className="w-full h-1 bg-slate-200 px-2 md:px-10 my-4"></div>
-          <p className="text-lg md:text-xl">
-            I am a Full Stack Developer with 2 years of experience, I have a passion for exploring diverse technologies and working alongside individuals who share a similar mindset.
-            My academic background includes a B.Tech in Computer Science with a specialization in Artificial Intelligence.
-            I am enthusiastic about collaborating on new projects and contributing my skills to create innovative solutions.
+          <p className="text-lg md:text-xl flex mb-2">
+            <ImStack/>
+            <span className="ml-4">
+              Full Stack Developer with 2 years of experience
+            </span>
+          </p>
+          <p className="text-lg md:text-xl flex mb-2">
+            <MdOutlineSchool/>
+            <span className="ml-4">
+              Holds a B.Tech in Computer Science with a specialization in Artificial Intelligence
+            </span>
+          </p>
+          <p className="text-lg md:text-xl flex mb-2">
+            <GiTechnoHeart size={25}/>
+            <span className="ml-4">
+              Passionate about exploring diverse technologies, collaborating on new projects and contributing skills to create innovative solutions.
+            </span>
           </p>
         </div>
       </div>

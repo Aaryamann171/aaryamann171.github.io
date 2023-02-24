@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Skill from "../components/Skill";
+import SkillIcon from "../components/skill-icon";
 import { skillsData } from "../data/skillsData";
 
 const Skills = () => {
@@ -37,7 +37,7 @@ const Skills = () => {
                         data.skills.map((skill, index) => {
                           return (
                             <div className="mb-2" key={index}>
-                              <Skill title={skill.title} thumbnailSrc={skill.thumbnailSrc} />
+                              <SkillIcon title={skill.title} thumbnailSrc={skill.thumbnailSrc} />
                             </div>
                           )
                         })
