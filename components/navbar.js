@@ -1,73 +1,48 @@
 import Link from "next/link";
-
-const linkStyle = {
-  color: "#000000",
-  fontWeight: "bold"
-}
-const navStyle = {
-  background: "#FFFFFF",
-  borderBottom: "2px black solid",
-  color: "#000000"
-}
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light mb-2" style={navStyle}>
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <Link href="/">
-            <a className="navbar-brand" style={linkStyle}>[Aaryamann]</a>
-          </Link>
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link href="/skills">
-                <a className="nav-link" aria-current="page" style={linkStyle}>
-                  [Skills]
-                </a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/projects">
-                <a className="nav-link" style={linkStyle}>[Projects]</a>
-              </Link>
-            </li>
-          </ul>
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link href="https://github.com/aaryamann171">
-                <a className="nav-link" target="_blank" rel="noreferrer" style={linkStyle}>
-                  [GitHub]
-                </a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="https://aaryamann171.github.io/blog/">
-                <a className="nav-link" target="_blank" rel="noreferrer" style={linkStyle}>
-                  [Blog]
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="mailto:aaryamann171@gmail.com">
-                <a className="nav-link" style={linkStyle}>[E-mail]</a>
-              </Link>
-            </li>
-          </ul>
+    const [headerOpen, setHeaderOpen] = useState(false);
+    const mobileNavLinksClasses = "text-2xl px-4 font-bold mt-2 hover:bg-slate-200"
+    return (
+        <div className="w-full bg-primary p-2 border-2 border-black">
+            <div className="md:flex hidden justify-between my-2 text-lg font-bold">
+                <div className="flex items-center">
+                    <Link href="/" passHref><h1 className="mx-2 text-accent px-2 cursor-pointer">[Aaryamann]</h1></Link>
+                    <Link href="/skills" passHref><h1 className="px-4 text-foreground cursor-pointer">[Skills]</h1></Link>
+                    <Link href="/projects" passHref><h1 className="px-4 text-foreground cursor-pointer">[Projects]</h1></Link>
+                </div>
+                <div className="flex items-center">
+                  <Link href="https://github.com/aaryamann171" passHref><h1 className="px-4 text-foreground cursor-pointer">[GitHub]</h1></Link>
+                  <Link href="https://aaryamann171.github.io/blog/" passHref><h1 className="px-4 text-foreground cursor-pointer">[Blog]</h1></Link>
+                  <Link href="/contact" passHref><h1 className="px-4 text-foreground cursor-pointer">[Contact]</h1></Link>
+                </div>
+            </div>
+            <div className="flex justify-between px-4 my-2 px-2 md:hidden">
+                <div>
+                    <Link href="/" passHref><h1 className="text-2xl font-bold text-accent md:mb-0">[Aaryamann]</h1></Link>
+                </div>
+                <div>
+                </div>
+                <div onClick={() => setHeaderOpen(!headerOpen)} className='text-3xl text-foreground flex cursor-pointer md:hidden'>
+                    {headerOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
+                </div>
+            </div>
+            {
+                headerOpen 
+                ? <div className="md:hidden pb-4 text-center">
+                    <Link href="/projects" passHref><h1 className={mobileNavLinksClasses}>Projects</h1></Link>
+                    <Link href="/skills" passHref><h1 className={mobileNavLinksClasses}>Skills</h1></Link>
+                    <Link href="https://aaryamann171.github.io/blog/" passHref><h1 className={mobileNavLinksClasses}>Blog</h1></Link>
+                    <Link href="https://github.com/aaryamann171" passHref><h1 className={mobileNavLinksClasses}>GitHub</h1></Link>
+                    <Link href="/contact" passHref><h1 className={mobileNavLinksClasses}>Contact</h1></Link>
+                 </div>
+                : null
+            }
         </div>
-      </div>
-    </nav>
-  );
-};
+    )
+}
 
 export default Navbar;

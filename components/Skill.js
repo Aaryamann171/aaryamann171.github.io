@@ -1,13 +1,13 @@
-const imgStyles = {
-  width: "10%",
-  padding: "5px",
-};
-const Skill = (props) => {
+import Image from "next/image";
+
+const Skill = ({ thumbnailSrc, title }) => {
   return (
-    <img
-      style={imgStyles}
-      src={props.thumbnailSrc}
-      title={props.title}
+    <Image
+    alt={title}
+      src={thumbnailSrc}
+      title={title}
+      height={50}
+      width={50}
       loading="lazy"
     />
   );
