@@ -33,22 +33,28 @@ const Home = () => {
           </h1>
           <div className="w-full h-1 bg-slate-200 px-2 md:px-10 my-4"></div>
           <p className="text-lg md:text-xl flex mb-2">
-            <ImStack/>
-            <span className="ml-4">
+            <div className="py-2">
+              <ImStack/>
+            </div>
+            <div class="ml-2">
               Full Stack Developer with 2 years of experience
-            </span>
+            </div>
           </p>
           <p className="text-lg md:text-xl flex mb-2">
-            <MdOutlineSchool/>
-            <span className="ml-4">
+            <div className="py-2">
+              <MdOutlineSchool/>
+            </div>
+            <div className="ml-2">
               Holds a B.Tech in Computer Science with a specialization in Artificial Intelligence
-            </span>
+            </div>
           </p>
           <p className="text-lg md:text-xl flex mb-2">
-            <GiTechnoHeart size={25}/>
-            <span className="ml-4">
-              Passionate about exploring diverse technologies, collaborating on new projects and contributing skills to create innovative solutions.
-            </span>
+            <div className="py-2">
+              <GiTechnoHeart/>
+            </div>
+            <div clasName="pl-4">
+              <h1 className="ml-2">Passionate about exploring diverse technologies, collaborating on new projects and contributing skills to create innovative solutions.</h1>
+            </div>
           </p>
         </div>
       </div>

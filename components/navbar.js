@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="w-full bg-[#21201F] text-[#f3f4f6] p-2 border-2 border-black">
             <div className="md:flex hidden justify-between my-2 text-lg font-bold">
                 <div className="flex items-center">
-                    <Link href="/" passHref><h1 className="mx-2 text-accent px-2 cursor-pointer">[ Aaryamann ]</h1></Link>
+                    <Link href="/" passHref><h1 className="mx-2 text-accent px-2 cursor-pointer">Aaryamann</h1></Link>
                     <Link href="/skills" passHref><h1 className="px-4 text-foreground cursor-pointer">Skills</h1></Link>
                     <Link href="/projects" passHref><h1 className="px-4 text-foreground cursor-pointer">Projects</h1></Link>
                 </div>
