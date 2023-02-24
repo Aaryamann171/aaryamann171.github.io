@@ -36,7 +36,7 @@ const Home = () => {
             <div className="py-2">
               <ImStack/>
             </div>
-            <div class="ml-2">
+            <div className="ml-2">
               Full Stack Developer with 2 years of experience
             </div>
           </p>
