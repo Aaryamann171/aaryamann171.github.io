@@ -1,172 +1,57 @@
-import Skill from "../components/Skill";
+import Image from "next/image";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-
-const skillsCardStyle = {
-  backgroundColor: "#FFFFFF",
-  color: "#000000",
-  borderRadius: "8px",
-  padding: "20px",
-  borderLeft: "2px black solid",
-  borderTop: "2px black solid",
-  borderBottom: "4px black solid",
-  borderRight: "4px black solid",
-};
-
-const backgroudStyle = {
-  backgroundColor: "#F6F6F6",
-}
-
-const imgStyle = {
-  borderRadius: "8px",
-  alignItems: "center",
-  maxWidth: "90%",
-};
+import Skill from "../components/Skill";
+import { skillsData } from "../data/skillsData";
 
 const Skills = () => {
-  const skillData = [
-    {
-      category: "Programming",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/python.png",
-          title: "python"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/cpp.png",
-          title: "c++"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/java.png",
-          title: "java"
-        },
-      ]
-    },
-    {
-      category: "Web Development",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/html5.png",
-          title: "html5"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/css3.png",
-          title: "css3"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/javascript.png",
-          title: "javascript"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/tailwindcss.png",
-          title: "tailwind"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/bootstrap.png",
-          title: "bootstrap",
-        }
-      ]
-    },
-    {
-      category: "Database",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/mysql.png",
-          title: "my-sql"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/mongodb.png",
-          title: "mongodb"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/postgresql.png",
-          title: "postgresql"
-        },
-      ]
-    },
-    {
-      category: "Frameworks",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/nextjs.png",
-          title: "next.js"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/django.png",
-          title: "django"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/react.png",
-          title: "react"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/flutter.png",
-          title: "flutter"
-        }
-      ]
-    },
-    {
-      category: "Platforms and Tools",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/linux.png",
-          title: "linux"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/git.png",
-          title: "git"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/github.png",
-          title: "github"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/adobe-xd.png",
-          title: "adobe-xd"
-        }
-      ]
-    }
-  ]
   return (
-    <>
-      <div className="d-flex flex-column min-vh-100 text-center" style={backgroudStyle}>
-        <Navbar />
-        <div className="container my-auto">
-          <div className="row container">
-            <div className="col-md-6 col-sm-12">
-              <img
-                src="/images/others/coder_vector.png"
-                alt="coder"
-                style={imgStyle}
-              />
-            </div>
-            <div className="col-md-6 col-sm-12" style={skillsCardStyle}>
-              {
-              skillData.map((data) => {
-                return(
-                  <div key={data.category}>
-                  <h4>{data.category}</h4>
-                  {
-                    data.skills.map((skill) => {
-                      return(
-                      <Skill
-                        key={skill.title}
-                        thumbnailSrc={skill.thumbnailSrc}
-                        title={skill.title}
-                      />
-                      )
-                    })
-                  }
+    <div className="h-screen w-screen flex flex-col justify-between items-center">
+      <Navbar />
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="md:block hidden">
+          <Image
+            src="/images/others/coder_vector.png"
+            alt="coder"
+            height={500}
+            width={500}
+          />
+        </div>
+        <div className="md:hidden">
+          <Image
+            src="/images/others/coder_vector.png"
+            alt="coder"
+            height={200}
+            width={200}
+          />
+        </div>
+        <div className="mb-6 px-4 md:px-10 py-2 bg-slate-100 border-2 border-black rounded-lg flex items-center justify-center overflow-x-hidden">
+          <div>
+            {
+              skillsData.map((data, index) => {
+                return (
+                  <div key={index}>
+                    <h1 className="text-2xl mb-2 text-center px-4 md:px-36">{data.category}</h1>
+                    <div className="flex justify-center space-x-4">
+                      {
+                        data.skills.map((skill, index) => {
+                          return (
+                            <div className="mb-2" key={index}>
+                              <Skill title={skill.title} thumbnailSrc={skill.thumbnailSrc} />
+                            </div>
+                          )
+                        })
+                      }
+                    </div>
                   </div>
                 )
               })
-              }
-            </div>
+            }
           </div>
         </div>
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

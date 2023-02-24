@@ -1,16 +1,17 @@
-const footerStyle = {
-  background: "#FFFFFF",
-  color: "#000000",
-  borderTop: "2px black solid",
-  fontWeight: "bold"
-}
-
 const Footer = () => {
-  return (
-    <footer className="text-center text-lg-start footer navbar-fixed-bottom mt-2" style={footerStyle}>
-      <div className="text-center p-3">[&lt;/&gt; with &lt;3 by aaryamann]</div>
-    </footer>
-  );
-};
+    return (
+        <div className="w-full bg-primary border-t-2 border-black font-bold text-base md:text-lg">
+            <footer className="text-center lg:text-left">
+            <div className="text-center p-4">
+                <a href="http://aaryamann171.github.io" target={'_blank'} rel="noreferrer">
+                    <span className="text-foreground">{'[ '}</span>
+                    <span className="text-accent">{'</> with <3 by Aaryamann'}</span>
+                    <span className="text-foreground">{' ]'}</span>
+                </a>
+            </div>
+            </footer>
+        </div>
+    )
+}
 
 export default Footer;
