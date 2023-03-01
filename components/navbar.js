@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
             {
                 headerOpen 
-                ? <div className="md:hidden pb-4 text-center">
+                ? <div className="md:hidden py-4 text-center">
                     <Link href="/projects" passHref><h1 className={mobileNavLinksClasses}>Projects</h1></Link>
                     <Link href="/skills" passHref><h1 className={mobileNavLinksClasses}>Skills</h1></Link>
                     <Link href="https://aaryamann171.github.io/blog/" passHref><h1 className={mobileNavLinksClasses}>Blog</h1></Link>
