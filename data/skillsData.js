@@ -17,48 +17,6 @@
       ]
     },
     {
-      category: "Web Development",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/html5.png",
-          title: "html5"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/css3.png",
-          title: "css3"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/javascript.png",
-          title: "javascript"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/tailwindcss.png",
-          title: "tailwind"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/bootstrap.png",
-          title: "bootstrap",
-        }
-      ]
-    },
-    {
-      category: "Database",
-      skills: [
-        {
-          thumbnailSrc: "/images/skill-icons/mysql.png",
-          title: "my-sql"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/mongodb.png",
-          title: "mongodb"
-        },
-        {
-          thumbnailSrc: "/images/skill-icons/postgresql.png",
-          title: "postgresql"
-        },
-      ]
-    },
-    {
       category: "Frameworks",
       skills: [
         {
@@ -80,6 +38,23 @@
       ]
     },
     {
+      category: "Database",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/mysql.png",
+          title: "my-sql"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/mongodb.png",
+          title: "mongodb"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/postgresql.png",
+          title: "postgresql"
+        },
+      ]
+    },
+    {
       category: "Platforms and Tools",
       skills: [
         {
@@ -97,6 +72,31 @@
         {
           thumbnailSrc: "/images/skill-icons/adobe-xd.png",
           title: "adobe-xd"
+        }
+      ]
+    },
+    {
+      category: "Web Development",
+      skills: [
+        {
+          thumbnailSrc: "/images/skill-icons/html5.png",
+          title: "html5"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/css3.png",
+          title: "css3"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/javascript.png",
+          title: "javascript"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/tailwindcss.png",
+          title: "tailwind"
+        },
+        {
+          thumbnailSrc: "/images/skill-icons/bootstrap.png",
+          title: "bootstrap",
         }
       ]
     }
