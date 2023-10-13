@@ -25,12 +25,12 @@ const Skills = () => {
             width={200}
           />
         </div>
-        <div className="m-3 p-2 md:p-4 md:px-10 md:py-4 bg-slate-100 border-2 border-black rounded-lg overflow-x-hidden">
+        <div className="m-3 p-2 md:p-4 md:px-10 md:py-4 bg-blue-100 rounded-3xl overflow-x-hidden">
           <div>
             {
               skillsData.map((data, index) => {
                 return (
-                  <div key={index} className="bg-white border-2 rounded-lg my-2 md:my-4 p-2 md:p-4 border-black flex">
+                  <div key={index} className="bg-white rounded-3xl my-2 md:my-4 p-2 md:p-4 flex text-slate-800">
                     <h1 className="w-1/2 text-base md:text-2xl text-center my-auto">{data.category}</h1>
                     <div className="flex w-1/2 justify-center space-x-2">
                       {
