@@ -11,11 +11,11 @@ const Contact = () => {
             >
                 <div>
                     <h1 className="text-slate-200">
-                        If you'd like to connect, send me an email at
+                        If you would like to connect, send me an email at
                     </h1>
                 </div>
                 <div>
-                    <h1 className="font-bold text-[#5DE4C7] ">
+                    <h1 className="font-bold text-[#5DE4C7]">
                         aaryamann171@gmail.com
                     </h1>
                 </div>
