@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import LinkHeader from "./linkHeader";
+import LinkHeader from "./LinkHeader";
 
 const Navbar = () => {
     const [headerOpen, setHeaderOpen] = useState(false);
