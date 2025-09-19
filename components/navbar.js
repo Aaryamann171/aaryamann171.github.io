@@ -9,7 +9,10 @@ const Navbar = () => {
     const mobileNavLinksClasses = "text-xl px-4 mt-2 hover:bg-slate-200";
     return (
         <div className="w-full mx-2">
-            <div className="md:flex hidden py-2 justify-between my-2 text-lg bg-gray-700 backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-xl">
+            <div
+                className="md:flex hidden py-2 justify-between my-2 text-lg
+             bg-gray-700 backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-xl"
+            >
                 <div className="flex items-center text-white">
                     <LinkHeader href="/" header="Aaryamann" />
                     <LinkHeader href="/skills" header="Skills" />

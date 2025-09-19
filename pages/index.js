@@ -10,21 +10,25 @@ const Home = () => {
     return (
         <div className="md:h-screen md:w-screen flex flex-col justify-between items-center overflow-x-hidden">
             <Navbar />
-            <div className="mx-4 my-4 md:mx-20 p-4 md:p-10  bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10  rounded-3xl flex flex-col md:flex-row items-center justify-center">
+            <div className="mx-4 my-4 md:mx-20 p-4 md:p-10 bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-3xl flex flex-col md:flex-row items-center justify-center">
                 <div className="hidden md:block">
                     <Image
-                        src="/images/others/aaryamann_vector.png"
+                        src="/images/others/aaryamann_vector.webp"
                         alt="aaryamann"
                         height={600}
                         width={600}
+                        quality={80}
+                        priority={true}
                     />
                 </div>
                 <div className="md:hidden">
                     <Image
-                        src="/images/others/aaryamann_vector.png"
+                        src="/images/others/aaryamann_vector.webp"
                         alt="aaryamann"
                         height={200}
                         width={200}
+                        quality={80}
+                        priority={true}
                     />
                 </div>
                 <div>

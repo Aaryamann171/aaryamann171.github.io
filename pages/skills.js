@@ -9,7 +9,7 @@ const Skills = () => {
         <div className="h-screen w-screen flex flex-col justify-between items-center">
             <Navbar />
             <div
-                className="flex flex-col md:flex-row items-center rounded-xl
+                className="flex flex-col md:flex-row items-center rounded-3xl
              bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 
       "
             >
@@ -39,8 +39,7 @@ const Skills = () => {
                             return (
                                 <div
                                     key={index}
-                                    className="rounded-3xl my-2 md:my-4 p-2 md:p-4 flex text-slate-800
-                                              bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-90  "
+                                    className="rounded-3xl my-2 md:my-4 p-2 md:p-4 flex text-slate-800 bg-gradient-to-r from-blue-300 to-white opacity-90"
                                 >
                                     <h1 className="w-1/2 text-base md:text-2xl text-center my-auto">
                                         {data.category}
