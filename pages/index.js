@@ -13,17 +13,17 @@ const Home = () => {
             <div className="mx-4 my-4 md:mx-20 p-4 md:p-10 bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-3xl flex flex-col md:flex-row items-center justify-center">
                 <div className="hidden md:block">
                     <Image
-                        src="/images/others/aaryamann_vector.webp"
+                        src="/images/others/avatar_updated.png"
                         alt="aaryamann"
-                        height={600}
-                        width={600}
+                        height={1000}
+                        width={1000}
                         quality={80}
                         priority={true}
                     />
                 </div>
                 <div className="md:hidden">
                     <Image
-                        src="/images/others/aaryamann_vector.webp"
+                        src="/images/others/avatar_updated.png"
                         alt="aaryamann"
                         height={200}
                         width={200}
